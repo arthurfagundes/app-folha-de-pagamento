@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#E2E3E2">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/edtNomeFuncionario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTitle"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:inputType="textPersonName"
+        android:hint="Nome do funcionário" />
+
+    <EditText
+        android:id="@+id/edtSalarioBruto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNomeFuncionario"
+        android:layout_marginHorizontal="30dp"
+        android:inputType="numberDecimal"
+        android:hint="Salário bruto" />
+
+    <TextView
+        android:id="@+id/txtSexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSalarioBruto"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sexorg" />
+
+    <RadioGroup
+        android:id="@+id/rgSexo"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/txtSexo"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbFeminino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/feminino" />
+
+        <RadioButton
+            android:id="@+id/rbMasculino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="30dp"
+            android:text="@string/masculino" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/edtNumeroFilhos"
+        android:layout_below="@+id/rgSexo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Nº de filhos"/>
+
+    <Button
+        android:id="@+id/btCalcular"
+        android:layout_below="@id/edtNumeroFilhos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btcalcular"
+        android:backgroundTint="#FF9800"/>
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/resultado"
+        android:layout_below="@+id/btCalcular"/>
+
+    <TextView
+        android:id="@+id/txtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Nome:"
+        android:layout_below="@+id/txtResultado"/>
+
+    <TextView
+        android:id="@+id/txtINSS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="INSS:"
+        android:layout_below="@+id/txtNome"/>
+
+    <TextView
+        android:id="@+id/txtIR"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="IR:"
+        android:layout_below="@+id/txtINSS"/>
+
+    <TextView
+        android:id="@+id/txtSalarioLiquido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:hint="Salário Líquido:"
+        android:layout_below="@+id/txtIR"/>
+
+
+</RelativeLayout>
+

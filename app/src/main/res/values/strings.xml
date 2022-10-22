@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App FolhaPGTO</string>
+    <string name="titulo">FOLHA DE PAGAMENTO</string>
+    <string name="sexorg">Sexo:</string>
+    <string name="feminino">Feminino</string>
+    <string name="masculino">Masculino</string>
+    <string name="btcalcular">CALCULAR</string>
+    <string name="resultado">RESULTADO</string>
+</resources>
